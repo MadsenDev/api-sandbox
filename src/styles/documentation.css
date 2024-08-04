@@ -1,0 +1,22 @@
+/* customStyles.css */
+
+.text-gradient {
+    white-space: nowrap; /* Ensure text does not wrap */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #4fd1c5, #4299e1, #9f7aea);
+    border-radius: 10px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .dark .custom-scrollbar::-webkit-scrollbar-track {
+    background: #2d3748;
+  }  
