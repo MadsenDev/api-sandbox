@@ -30,7 +30,7 @@ const ColorPaletteGenerator = () => {
       <div>
         <Header title="Color Palette Generator" />
         <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-8 mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <FormInput
               label="Number of Colors"
               type="number"
@@ -42,6 +42,7 @@ const ColorPaletteGenerator = () => {
               type="color"
               value={baseColor}
               onChange={(e) => setBaseColor(e.target.value)}
+              className={'min-h-10'}
             />
             <SelectInput
               label="Scheme"
@@ -79,6 +80,15 @@ const ColorPaletteGenerator = () => {
             { name: 'scheme', description: 'The color scheme to use (analogous, complementary, triadic, monochromatic)' },
           ]}
           example="https://api.madsens.dev/color-palette?numColors=5&baseColor=%233498db&scheme=complementary"
+          responseExample={`{
+  "palette": [
+    "#3498db",
+    "#db3349",
+    "#34db8f",
+    "#dbda34",
+    "#8a34db"
+  ]
+}`}
         />
       </DocumentationSection>
     </Container>

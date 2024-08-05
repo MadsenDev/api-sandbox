@@ -1,0 +1,10 @@
+/* accordion.css */
+
+.accordion-content a {
+    color: #38b2ac; /* Tailwind teal-500 */
+    text-decoration: underline;
+  }
+  
+  .accordion-content a:hover {
+    color: #2c7a7b; /* Tailwind teal-700 */
+  }  

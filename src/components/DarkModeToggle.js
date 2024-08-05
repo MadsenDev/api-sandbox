@@ -3,7 +3,7 @@ import { FaSun, FaMoon } from 'react-icons/fa';
 import Cookies from 'js-cookie';
 
 const DarkModeToggle = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     // Check for existing dark mode preference in cookies

@@ -98,6 +98,9 @@ const PasswordGenerator = () => {
             { name: 'includeUppercase', description: 'Whether to include uppercase letters (true/false)' },
           ]}
           example="https://api.madsens.dev/password?length=12&includeNumbers=true&includeSpecialChars=true&includeUppercase=true"
+          responseExample={`{
+            "password": "aB3$eFgH"
+          }`}
         />
       </DocumentationSection>
     </Container>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ApiEndpoint = ({ description, url, parameters, example }) => (
+const ApiEndpoint = ({ description, url, parameters, example, responseExample }) => (
   <div>
     <p className="mb-4 text-lg">{description}</p>
     <pre className="bg-gray-200 dark:bg-gray-900 text-gradient p-4 rounded mb-6 overflow-x-auto custom-scrollbar">
@@ -17,10 +17,16 @@ const ApiEndpoint = ({ description, url, parameters, example }) => (
         </div>
       ))}
     </dl>
-    <p className="mb-4 text-lg">Example:</p>
+    <p className="mb-4 text-lg">Example Request:</p>
     <pre className="bg-gray-200 dark:bg-gray-900 text-gradient p-4 rounded overflow-x-auto custom-scrollbar">
       <code className="bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
         {example}
+      </code>
+    </pre>
+    <p className="mb-4 mt-4 text-lg">Example Response:</p>
+    <pre className="bg-gray-200 dark:bg-gray-900 text-gradient p-4 rounded overflow-x-auto custom-scrollbar">
+      <code className="bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+        {responseExample}
       </code>
     </pre>
   </div>

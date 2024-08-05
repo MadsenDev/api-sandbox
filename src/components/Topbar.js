@@ -11,6 +11,7 @@ const Topbar = () => {
           <Link to="/" className="text-white px-4 py-2 hover:bg-purple-700 rounded">Home</Link>
           <Link to="/password-generator" className="text-white px-4 py-2 hover:bg-purple-700 rounded">Password Generator</Link>
           <Link to="/color-palette" className="text-white px-4 py-2 hover:bg-purple-700 rounded">Color Palette</Link>
+            <Link to="/dinner-suggestion" className="text-white px-4 py-2 hover:bg-purple-700 rounded">Dinner Suggestion</Link>
           <DarkModeToggle />
         </div>
       </div>
